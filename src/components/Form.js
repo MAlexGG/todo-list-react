@@ -8,6 +8,7 @@ const initialForm = {
 function Form({createTask, editTask, setEditTask, updateTask}) {
 
     const [form, setForm] = useState(initialForm);
+    const [error, setError] = useState('');
 
     useEffect(() => {
         editTask ? setForm(editTask) : setForm(initialForm);
@@ -23,7 +24,7 @@ function Form({createTask, editTask, setEditTask, updateTask}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!form.task) {
-            console.log('escribe una tarea');
+            setError('Escribe una tarea');
             return;
         };
         form.id === null ? createTask(form) : updateTask(form);
@@ -33,14 +34,16 @@ function Form({createTask, editTask, setEditTask, updateTask}) {
     const handleReset = () => {
         setForm(initialForm);
         setEditTask('');
+        setError('');
     };
 
   return (
       <>
         <form onSubmit={handleSubmit}>
-            <label htmlFor="task">Task</label>  
+            <label htmlFor="task">Tarea</label>  
             <input type="text" name='task' onChange={handleChange} value={form.task} />  
-              <button type='submit'>{ editTask ? 'Editar tarea' : 'Crear tarea'}</button>  
+              {error && <span>{error}</span>}  
+            <button type='submit'>{ editTask ? 'Editar tarea' : 'Crear tarea'}</button>  
         </form>
       </>
   )
