@@ -15,9 +15,6 @@ function Task({task, deleteTask, setEditTask}) {
           <ImgTask src={deleteImg} alt='delete button' />
         </BtTask>
       </CtTask>
-          {/* <p>{task.task}</p>
-          <button onClick={() => setEditTask(task)}>editar</button>
-          <button onClick={() => deleteTask(task.id)}>borrar</button> */}
       </>
   )
 }

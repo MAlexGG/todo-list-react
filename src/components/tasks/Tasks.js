@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { todoService } from '../../services/todoService';
 import Form from '../form/Form';
 import Task from '../task/Task';
+import { CtTasks } from './Tasks.styled';
 
 const api = todoService();
 
@@ -46,11 +47,13 @@ function Tasks() {
   return (
       <>    
           <Form createTask={createTask} editTask={editTask} setEditTask={setEditTask} updateTask={updateTask} />
-          {
-            tasks.map((task, index) => (
-                <Task task={task} key={index} deleteTask={deleteTask} setEditTask={setEditTask} /> 
-            ))
-          }
+          <CtTasks>
+              {
+                  tasks.map((task, index) => (
+                      <Task task={task} key={index} deleteTask={deleteTask} setEditTask={setEditTask} />
+                  ))
+              }
+          </CtTasks>
       </>
   )
 }

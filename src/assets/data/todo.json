@@ -5,12 +5,16 @@
       "task": "Ir a comprar comida"
     },
     {
-      "id": 6,
-      "task": "Ir a cambiar cierre de chaqueta"
-    },
-    {
       "id": 7,
       "task": "Ir a comprar pantalón"
+    },
+    {
+      "id": 8,
+      "task": "Ir a la playita"
+    },
+    {
+      "id": 9,
+      "task": "Cumplir años"
     }
   ]
 }
