@@ -1,20 +1,16 @@
 {
   "todo": [
     {
-      "id": 2,
-      "task": "Ir al gym ahora"
-    },
-    {
-      "id": 4,
-      "task": "Ir a la playa"
-    },
-    {
       "id": 5,
       "task": "Ir a comprar comida"
     },
     {
       "id": 6,
       "task": "Ir a cambiar cierre de chaqueta"
+    },
+    {
+      "id": 7,
+      "task": "Ir a comprar pantalón"
     }
   ]
 }

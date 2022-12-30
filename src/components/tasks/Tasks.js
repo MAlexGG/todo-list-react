@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { todoService } from '../services/todoService';
-import Form from './Form';
-import Task from './Task';
+import { todoService } from '../../services/todoService';
+import Form from '../form/Form';
+import Task from '../task/Task';
 
 const api = todoService();
 

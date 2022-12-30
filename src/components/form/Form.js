@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { CtForm, FormButton, FormInput, FormLable, FormSpan } from './Form.styled';
 
 const initialForm = {
     id: null,
@@ -39,12 +40,12 @@ function Form({createTask, editTask, setEditTask, updateTask}) {
 
   return (
       <>
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="task">Tarea</label>  
-            <input type="text" name='task' onChange={handleChange} value={form.task} />  
-              {error && <span>{error}</span>}  
-            <button type='submit'>{ editTask ? 'Editar tarea' : 'Crear tarea'}</button>  
-        </form>
+          <CtForm onSubmit={handleSubmit}>
+              <FormLable htmlFor="task">Tarea</FormLable>
+              <FormInput type="text" name='task' onChange={handleChange} value={form.task} />
+              {error && <FormSpan>{error}</FormSpan>}
+              <FormButton type='submit'>{ editTask ? 'Editar tarea' : 'Crear tarea'}</FormButton>
+          </CtForm>
       </>
   )
 }
