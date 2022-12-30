@@ -52,7 +52,7 @@ function Tasks() {
     };
 
     const deleteTask = (id) => {
-        Swal.fire({
+        MySwal.fire({
             title: '¿Quieres borrar esta tarea?',
             text: "¡No podrás revertir esta acción!",
             icon: 'warning',
@@ -66,7 +66,7 @@ function Tasks() {
                     const remainTasks = tasks.filter(task => task.id !== id);
                     setTasks(remainTasks);
                 });
-                Swal.fire(
+                MySwal.fire(
                     '¡Borrada!',
                     'Tu tarea ha sido borrada',
                     'success'

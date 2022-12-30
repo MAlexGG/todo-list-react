@@ -2,15 +2,43 @@
   "todo": [
     {
       "id": 5,
-      "task": "Ir a comprar comida"
+      "task": "Comprar comida"
     },
     {
       "id": 7,
-      "task": "Ir a comprar pantalón"
+      "task": "Comprar pantalón"
     },
     {
       "id": 8,
-      "task": "fdgd"
+      "task": "Ir al gym"
+    },
+    {
+      "id": 9,
+      "task": "Ir a arreglar chaqueta"
+    },
+    {
+      "id": 10,
+      "task": "Canjear permiso de conducir"
+    },
+    {
+      "id": 11,
+      "task": "Hacer paella"
+    },
+    {
+      "id": 12,
+      "task": "Comprar pasaje de UIO"
+    },
+    {
+      "id": 13,
+      "task": "Ir a la dermatóloga"
+    },
+    {
+      "id": 14,
+      "task": "Retirar libros biblioteca"
+    },
+    {
+      "id": 15,
+      "task": "Preparar clases"
     }
   ]
 }
