@@ -26,6 +26,7 @@ export const BtTask = styled.button`
     justify-content: center;
     align-items: center;
     margin-left: 2px;
+    cursor: pointer;
 `;
 
 export const ImgTask = styled.img`
