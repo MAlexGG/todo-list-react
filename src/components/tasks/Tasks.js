@@ -5,6 +5,7 @@ import Task from '../task/Task';
 import { CtTasks } from './Tasks.styled';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import Search from '../search/Search';
 
 const api = todoService();
 
@@ -12,12 +13,17 @@ function Tasks() {
 
     const [tasks, setTasks] = useState([]);
     const [editTask, setEditTask] = useState();
+    const [search, setSearch] = useState('');
 
     const MySwal = withReactContent(Swal);
 
-    useEffect(() => {  
+    useEffect(() => {    
+        search ? api.get().then((res) => {
+            setTasks(res.data.filter(todo => todo.task.toLocaleLowerCase().includes(search.toLocaleLowerCase())));
+        })
+            :
         api.get().then((res) => setTasks(res.data));
-    }, []);
+    }, [search]); 
 
     const createTask = (data) => {
         api.create(data).then((res) => {
@@ -77,6 +83,7 @@ function Tasks() {
  
   return (
       <>    
+          <Search setSearch={setSearch} search={search} />
           <Form createTask={createTask} editTask={editTask} setEditTask={setEditTask} updateTask={updateTask} />
           <CtTasks>
               {

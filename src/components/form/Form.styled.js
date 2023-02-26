@@ -9,6 +9,10 @@ export const CtForm = styled.form`
 
 export const FormLable = styled.label`
     color: var(--main-color);
+    font-size: 15px;
+    @media (max-width: 546px) {
+        font-size: 18px;
+    };
 `;
 
 export const FormInput = styled.input`
@@ -28,6 +32,10 @@ export const FormInput = styled.input`
 
 export const FormSpan = styled.span`
     color: var(--warning-color);
+    font-size: 15px;
+    @media (max-width: 546px) {
+        font-size: 18px;
+    };
 `;
 
 export const FormButton = styled.button`

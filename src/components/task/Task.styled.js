@@ -5,22 +5,19 @@ export const CtTask = styled.div`
     justify-content: center;
     align-items: center;
     width: 80vw;
-    height: 25px;
+    height: auto;
     border-bottom: 1px solid var(--main-color);
-    @media (max-width: 546px) {
-        height: 55px;
-    };
 `; 
 
 export const TxtTask = styled.p`
     color: var(--main-color);
     margin: 0px;
-    margin: 7px auto 7px 0px;
     text-align: start;
-    width: 65vw;
-    font-size: 12px;
+    width: 80vw;
+    font-size: 15px;
     @media (max-width: 546px) {
         font-size: 18px;
+        width: 65vw;
     };
 `;
 
@@ -33,13 +30,13 @@ export const BtTask = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2px;
+    margin: 2px 0px 2px 2px;;
     cursor: pointer;
     padding: 0px;
     @media (max-width: 546px) {
         width: 44px;
         height: 44px;
-        margin-left: 5px;
+        margin: 5px 0px 5px 5px;
     };
 `;
 
