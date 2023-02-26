@@ -1,6 +1,4 @@
-# 📝 Simple CRUD to-do list with react.js
-
-============
+# 📝 Simple to-do list CRUD
 
 ## Table of Contents
 
@@ -18,9 +16,11 @@ This is an educational exercise to understand how to do a simple CRUD with react
 
 I was looking for a simple design imitating a notebook sheet.
 
+![desktop_mobile](https://user-images.githubusercontent.com/73828751/221412238-5af60a4f-2feb-48a4-9c91-b9817c67ffc2.png)
+
 ## Technologies
 
-It was developed with react.js, using axios library for services and json-server for data persistence.
+It was developed with react.js, using styled components library for css, axios library for services and json-server for data persistence. It's responsive. 
 
 ## Installation
 
