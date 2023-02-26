@@ -4,7 +4,7 @@ export const CtTask = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 100%;
     height: auto;
     border-bottom: 1px solid var(--main-color);
 `; 

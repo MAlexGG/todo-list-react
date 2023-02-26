@@ -10,6 +10,9 @@ export const CtSearch = styled.form`
 export const SearchLable = styled.label`
     color: var(--main-color);
     font-size: 15px;
+    @media (max-width: 546px) {
+        font-size: 18px;
+    };
 `;
 
 export const SearchInput = styled.input`
@@ -21,4 +24,8 @@ export const SearchInput = styled.input`
     color: var(--main-color);
     font-family: var(--main-font);
     padding-left: 10px;
+    @media (max-width: 546px) {
+        height: 44px;
+        width: 80vw;
+    };
 `;
