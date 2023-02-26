@@ -1,4 +1,5 @@
 import React from 'react'
+import { CtSearch, SearchInput, SearchLable } from './Search.styled';
 
 function Search({setSearch}) {
 
@@ -8,7 +9,11 @@ function Search({setSearch}) {
 
   return (
       <>
-          <input type="text" placeholder='search' onChange={handleChange}/>
+        <CtSearch>
+            <SearchLable>Buscar tarea</SearchLable>
+            <SearchInput type="text" placeholder='escribe la tarea que quieres buscar...' onChange={handleChange}/>
+        </CtSearch>
+        
       </>
   )
 }

@@ -65,7 +65,8 @@ function Tasks() {
             showCancelButton: true,
             confirmButtonColor: 'var(--main-color)',
             cancelButtonColor: 'var(--warning-color)',
-            confirmButtonText: '¡Si, bórrala!'
+            confirmButtonText: '¡Si, bórrala!',
+            cancelButtonText: '¡No!'
         }).then((result) => {
             if (result.isConfirmed) {
                 api.destroy(id).then((res) => {
@@ -82,16 +83,16 @@ function Tasks() {
     };
  
   return (
-      <>    
-          <Search setSearch={setSearch} search={search} />
-          <Form createTask={createTask} editTask={editTask} setEditTask={setEditTask} updateTask={updateTask} />
-          <CtTasks>
+      <>
+        <Search setSearch={setSearch} search={search} />
+        <Form createTask={createTask} editTask={editTask} setEditTask={setEditTask} updateTask={updateTask} />
+        <CtTasks>
               {
                   tasks.map((task, index) => (
                       <Task task={task} key={index} deleteTask={deleteTask} setEditTask={setEditTask} />
                   ))
               }
-          </CtTasks>
+        </CtTasks>
       </>
   )
 }
