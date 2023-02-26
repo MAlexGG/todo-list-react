@@ -16,8 +16,7 @@ This is an educational exercise to understand how to do a simple CRUD with react
 
 I was looking for a simple design imitating a notebook sheet.
 
-![desktop](https://user-images.githubusercontent.com/73828751/221411999-a2dbc116-722a-45f1-bac0-599da4a29929.png)
-![mobile](https://user-images.githubusercontent.com/73828751/221411666-2b75e2e1-0a3b-4aee-805a-e164e06f7b6d.png)
+![desktop_mobile](https://user-images.githubusercontent.com/73828751/221412238-5af60a4f-2feb-48a4-9c91-b9817c67ffc2.png)
 
 ## Technologies
 
