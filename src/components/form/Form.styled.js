@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
-export const CtForm = styled.form`
+export const CtForm = styled.form `
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 `;
 
-export const FormLable = styled.label`
+export const FormLable = styled.label `
     color: var(--main-color);
+    font-size: 15px;
+    @media (max-width: 546px) {
+        font-size: 18px;
+    };
 `;
 
-export const FormInput = styled.input`
+export const FormInput = styled.input `
     width: 50vw;
     height: 25px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -26,13 +30,24 @@ export const FormInput = styled.input`
     };
 `;
 
-export const FormSpan = styled.span`
+export const FormSpan = styled.span `
     color: var(--warning-color);
+    font-size: 15px;
+    @media (max-width: 546px) {
+        font-size: 18px;
+    };
 `;
 
-export const FormButton = styled.button`
-    background-color: var(--secondary-color);
-    color: var(--main-color);
+export const CtFormButtons = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+`;
+
+export const FormButton = styled.button `
+    background-color: ${props => props.background};
+    color: ${props => props.color};
     font-family: var(--main-font);
     width: 100px;
     height: 25px;
