@@ -20,13 +20,18 @@ I was looking for a simple design imitating a notebook sheet.
 
 ## Technologies
 
-It was developed with react.js, using styled components library for css, axios library for services and json-server for data persistence. It's responsive. 
+It was developed with react.js, using styled components library for css, axios library for services and json-server for data persistence. It's responsive. Service are tested with mocked data with Mock Service Worker library.
 
 ## Installation
 
 - Required React v.18.2.0
-- Required node.js
+- Required Node v.18.15.0
 - git clone <repository>
 - npm install
 - npm start
+- Required json-server v.0.17.1
+- npm i json-server
 - npm run todo (for json-server)
+- Required Mock Service Worker v.1.2.1 (for tests)
+- npm install msw --save-dev
+- npm run test
