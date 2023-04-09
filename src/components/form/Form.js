@@ -41,7 +41,7 @@ function Form({createTask, editTask, setEditTask, updateTask}) {
   return (
       <>
           <CtForm onSubmit={handleSubmit}>
-              <FormLable htmlFor="task">Tarea</FormLable>
+              <FormLable htmlFor="task">Crear tarea</FormLable>
               <FormInput type="text" name='task' onChange={handleChange} value={form.task} />
               {error && <FormSpan>{error}</FormSpan>}
               <CtFormButtons>

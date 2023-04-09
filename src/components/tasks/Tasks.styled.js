@@ -6,4 +6,5 @@ export const CtTasks = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    max-width: 900px;
 `;
