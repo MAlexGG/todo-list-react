@@ -5,6 +5,7 @@
     --background-color: #fceff1;
     --warning-color: rgb(249, 91, 118);
     --main-font: 'Architects Daughter', cursive;
+    --filter-main: invert(20%) sepia(51%) saturate(2258%) hue-rotate(186deg) brightness(94%) contrast(95%);
 }
 
 body {

@@ -59,8 +59,8 @@ export const FormButton = styled.button `
     cursor: pointer;
     font-size: 15px;
     @media (max-width: 546px) {
-        width: 150px;
-        height: 44px;
+        width: 125px;
+        height: 35px;
         font-size: 18px;
         margin-top: 10px;
     };
