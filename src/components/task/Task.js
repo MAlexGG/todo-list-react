@@ -8,10 +8,10 @@ function Task({task, deleteTask, setEditTask}) {
     <>
       <CtTask>
         <TxtTask>{task.task}</TxtTask>
-        <BtTask onClick={() => setEditTask(task)}>
+        <BtTask onClick={() => setEditTask(task)} aria-label="bt-edit">
           <ImgTask src={editImg} alt='edit button'/>
         </BtTask>
-        <BtTask onClick={() => deleteTask(task.id)}>
+        <BtTask onClick={() => deleteTask(task.id)} aria-label="bt-delete">
           <ImgTask src={deleteImg} alt='delete button' />
         </BtTask>
       </CtTask>

@@ -4,13 +4,9 @@ import spiral from '../../assets/img/notebook.svg';
 
 function Spiral() {
   return (
-    <>
-        <CtSpiral>
-            {/* <ImgSpiral src={spiral}/>
-            <ImgSpiral src={spiral}/> */}
-            <ImgSpiral imageUrl={spiral}/>
-        </CtSpiral>
-    </>
+    <CtSpiral>
+      <ImgSpiral imageUrl={spiral}/>
+    </CtSpiral>
   )
 }
 
